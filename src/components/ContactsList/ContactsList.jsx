@@ -9,12 +9,12 @@ const ContactsList = ({ contacts, deleteOnClick }) => {
   return (
     <ul className={styles.list}>
       {contacts.map(({ id, name, number }) => (
-        <li className={styles.item} key={id}>
-          <ContactsItem name={name} number={number} />
-          <button className={styles.button} id={id} onClick={deleteOnClick}>
-            Delete
-          </button>
-        </li>
+        <ContactsItem
+          name={name}
+          number={number}
+          id={id}
+          deleteOnClick={deleteOnClick}
+        />
       ))}
     </ul>
   );

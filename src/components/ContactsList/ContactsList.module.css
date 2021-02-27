@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-.item {
+/* .item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
@@ -26,4 +26,4 @@
   box-shadow: 7px 7px 13px 0px rgba(0, 0, 0, 0.38);
   transform: scale(1.05);
   background-image: radial-gradient(at center, #a1a1a1, #f0f0f0);
-}
+} */

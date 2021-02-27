@@ -3,12 +3,18 @@ import PropTypes from 'prop-types';
 
 import styles from './ContactItem.module.css';
 
-const ContactItem = ({ name, number }) => {
+const ContactItem = ({ name, number, id, deleteOnClick }) => {
   return (
-    <div className={styles.contact}>
-      <span>{name}</span>
-      <span>{number}</span>
-    </div>
+    <li className={styles.item} key={id}>
+      <div className={styles.contact}>
+        <span>{name}</span>
+        <span>{number}</span>
+      </div>
+
+      <button className={styles.button} id={id} onClick={deleteOnClick}>
+        Delete
+      </button>
+    </li>
   );
 };
 
