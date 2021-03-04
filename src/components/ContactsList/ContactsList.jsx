@@ -10,6 +10,7 @@ const ContactsList = ({ contacts, deleteOnClick }) => {
     <ul className={styles.list}>
       {contacts.map(({ id, name, number }) => (
         <ContactsItem
+          key={id}
           name={name}
           number={number}
           id={id}
