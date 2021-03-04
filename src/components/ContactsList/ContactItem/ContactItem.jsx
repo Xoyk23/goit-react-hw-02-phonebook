@@ -5,7 +5,7 @@ import styles from './ContactItem.module.css';
 
 const ContactItem = ({ name, number, id, deleteOnClick }) => {
   return (
-    <li className={styles.item} key={id}>
+    <li className={styles.item}>
       <div className={styles.contact}>
         <span>{name}</span>
         <span>{number}</span>
